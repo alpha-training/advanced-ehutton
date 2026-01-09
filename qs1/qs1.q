@@ -9,7 +9,7 @@ l:{[p]
 	txt:txt where not(""~)each txt;
 	txt:@[txt;i:where not(" "in)each txt;"processing ",];	
 	txt:@[txt;i;-1_];
-	txt where txt like "processing*"
+	txt where txt like"processing*";
 	if[count bad:(11_'txt i)except HEADERS;
        '"invalid header(s): "," " sv bad,\:":"];
 	processSection(i)_txt
