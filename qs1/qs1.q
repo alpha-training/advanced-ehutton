@@ -3,13 +3,13 @@ HEADERS:string`vars`state`indicators`enter`signal_exit`stop_loss`take_profit`tim
 
 / entry function
 l:{[p]
-	processSection p
- }
-
-processSection:{[x]
-	txt:read0 x;
+	txt:read0 p;
 	txt:txt where not(""~)each txt;
 	txt:@[txt;i:where not(" "in)each txt;"processing ",];
 	txt:@[txt;i;-1_];
-	{-1 first x;{-1"\"",x,"\""}each 1_x;}each(i)_txt;
+	processSection(i)_txt
+ }
+
+processSection:{[x]
+	{-1 first x;{-1"\"",x,"\""}each 1_x;}each x;
   }
