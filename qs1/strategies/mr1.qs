@@ -1,6 +1,6 @@
 # Q Sharpe sample mean reverting strategy
 
-ars:
+vars:
   lookback
   atr_lookback
   vol_lookback
@@ -10,7 +10,7 @@ ars:
   min_volume_ratio
   atr_mult
 
-tate:
+state:
   peak_close     = max(close since entry)
   bars_in_trade  = bars since entry
 
