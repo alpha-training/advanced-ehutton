@@ -11,7 +11,7 @@ l:{[p]
 	txt:@[txt;i;-1_];
 	txt where txt like "processing*"
 	if[count bad:(11_'txt i) except HEADERS;
-        '"invalid header(s): ", " " sv bad,\:":"];
+       '"invalid header(s): ", " " sv bad,\:":"];
 	processSection(i)_txt
  }
 
