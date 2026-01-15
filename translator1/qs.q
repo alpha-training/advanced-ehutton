@@ -9,7 +9,7 @@ sc:{if[0=type x;
       ];.z.s each x]
  };
 
-parsef:{[p] / parsef`:test1.qs
+parsef:{[p] / parsef`:test1.qs parsef`:test2.qs parsef`:test3.qs
     ctx:read0 p;
     ctx@:where"="in'ctx;
     txt:{ssr[;" ",y,"(";" func.",y,"("]@/:x}/[ctx;a:1_string key func];
