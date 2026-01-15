@@ -4,7 +4,7 @@ func.add3:{x+y+z}
 
 sc:{if[0=type x;
     if[-11h=type f:first x;
-      if[f in ` sv'`func,/:1_key func;
+      if[f in` sv'`func,/:1_key func;
         if[(n:count[x]-1)>m:count(get get f) 1;'("Too many arguments provided: ",string f)]]
       ];.z.s each x]
  };
