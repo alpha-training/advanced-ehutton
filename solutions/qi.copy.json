@@ -13,7 +13,12 @@
         "log": {
             "repo": "alpha-training/qi-log",
             "ref": "main",
-            "sha": "7270776927056af542ab5fdb0c487b8c4124e68a"
+            "sha": "7270776927056af542ab5fdb0c487b8c4124e68a",
+            "sizes": [
+                10,
+                20,
+                30
+            ]
         }
     }
 }
